@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Rock, Paper, Scissors (Extra Credit)</title>
+  <link rel="stylesheet" href="rps.css" />
+  <script src="rps-ec.js"></script>
+</head>
+
+<body>
+  <h1>Rock, Paper, Scissors (Extra Credit)</h1>
+  <h2>Click on any button to play</h2>
+  <button type="clickedButton" onclick="play('Rock')">Rock
+    <img src="images/rock.png" alt="rock image" />
+  </button>
+  <button type="clickedButton" onclick="play('Paper')">Paper
+    <img src="images/paper.png" alt="paper image" />
+  </button>
+  <button type="clickedButton" onclick="play('Scissors')">Scissors
+    <img src="images/scissors.png" alt="scissors image" />
+  </button>
+  <h3>Result</h3>
+  <table id="resultTable">
+    <tr>
+      <th>Human</th>
+      <th>Computer</th>
+      <th>Wins</th>
+      <th>Human Score</th>
+      <th>Computer Score</th>
+    </tr>
+    <tr>
+      <td id="humanImage"><img alt="Human Choice" /></td>
+      <td id="computerImage"><img alt="Computer Choice" /></td>
+      <td id="winner"></td>
+      <td id="humanScore"></td>
+      <td id="computerScore"></td>
+    </tr>
+  </table>
+  <button type="button" onclick="resetScores()">Reset</button>
+</body>
+</html>
